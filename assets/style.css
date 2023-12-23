@@ -95,8 +95,18 @@ main {
 }
 
 /* Footer */
-footer {
-    background-color: #F7B787 ;
+#social-networks {
+    text-align: center;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+
+#social-networks i {
+    font-size: 160%;
+    padding: 5%;
+    color: #F7B787
 }
 
 
@@ -134,6 +144,9 @@ footer {
         margin-top: 79px;
     }
 }
+
+
+
 
 /* Larger devices (laptops and desktops, 992px and up) */
 @media screen and (min-width: 992px) {
