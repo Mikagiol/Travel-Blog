@@ -26,11 +26,16 @@ header {
    z-index: 99;
    width: 100%;
    box-shadow: 0 2px 2px black;
+   display: flex;
+   justify-content: space-between;
+   align-items: baseline;
 }
 
 header a {
     text-decoration: none;
     color: inherit;
+    padding-top: 3px;
+    padding-bottom: 3px;
 }
 
 h1 {
@@ -39,6 +44,7 @@ h1 {
     text-transform: uppercase;
     letter-spacing: 2px;
     font-weight: bold;
+    font-size: 30px;
 }
 
 #menu {
@@ -64,11 +70,28 @@ nav {
     padding: 0 1rem;
     box-shadow: 0 2px 2px black;
     display: none;
+    top: 100%;
 }
+
+/* Nav toggle */
+#nav-toggle:checked~nav {
+    display: block
+}
+
+#nav-toggle {
+    display: none;
+}
+
+.nav-toggle-label {
+    font-size: 1.5rem;
+}
+
+
 /* Main content*/
 main {
     background-color: #F9E8D9 ;
     flex: 1 0 auto;
+    margin-top: 47px;
 }
 
 /* Footer */
