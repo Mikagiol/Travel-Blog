@@ -15,7 +15,7 @@ body {
     flex-direction: column;
     /* Generic project styles */
     color: #F7B787;
-    font-family: font-family: 'Libre Baskerville', serif;;
+    font-family: 'Libre Baskerville', serif;
 }
 
 /* Header */
@@ -34,8 +34,11 @@ header a {
 }
 
 h1 {
-    font-family: font-family: 'Raleway', sans-serif;
+    font-family: 'Raleway', sans-serif;
     color: #F9E8D9;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
 }
 
 /* Main content*/
