@@ -41,6 +41,20 @@ h1 {
     font-weight: bold;
 }
 
+#menu {
+    font-size: 100%;
+    letter-spacing: 3px;
+    list-style-type: none;
+}
+
+#menu > li {
+    margin-bottom: 1em;
+}
+
+.active {
+    border-bottom: 1px solid #F7B787;
+}
+
 /* Main content*/
 main {
     background-color: #F9E8D9 ;
