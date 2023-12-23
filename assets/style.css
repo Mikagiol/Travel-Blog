@@ -1,5 +1,5 @@
 /*Google fonts import */
-  
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Raleway:wght@200&display=swap');
 
 /*Asterisk wildcard to override default styles added by the browser */
 * {
@@ -12,16 +12,20 @@
 body {
     min-height: 100vh;
     display: flex;
-    flex-direction: ;
+    flex-direction: column;
     /* Generic project styles */
-    color: ;
-    font-family: ;
+    color: #F7B787;
+    font-family: font-family: 'Libre Baskerville', serif;;
 }
 
 /* Header */
 header {
-   
-
+   background-color: #527853;
+   padding: 0 1rem;
+   position: fixed;
+   z-index: 99;
+   width: 100%;
+   box-shadow: 0 2px 2px black;
 }
 
 header a {
@@ -30,17 +34,17 @@ header a {
 }
 
 h1 {
-    font-family: ;
-    color: ;
+    font-family: font-family: 'Raleway', sans-serif;
+    color: #F9E8D9;
 }
 
 /* Main content*/
 main {
-    background-color: ;
+    background-color: #F9E8D9 ;
     flex: 1 0 auto;
 }
 
 /* Footer */
 footer {
-    background-color: ;
-}git 
+    background-color: #F7B787 ;
+}
