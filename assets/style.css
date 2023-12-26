@@ -89,10 +89,18 @@ nav {
 
 /* Main content*/
 main {
-    background-color: #F9E8D9 ;
+    /* Make main ellement take up any surplus space to push footer down */
     flex: 1 0 auto;
     margin-top: 43px;
 }
+
+/* Hero image */
+#hero {
+    height: 600px;
+    width: 100%;
+    background: url("../assets/images/sea.jpg") no-repeat center center/cover;
+}
+
 
 /* Footer */
 #social-networks {
