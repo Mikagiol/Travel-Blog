@@ -18,6 +18,17 @@ body {
     font-family: 'Libre Baskerville', serif;
 }
 
+h1, h2, h3 {
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-size: 30px;
+    
+}
+
+
 /* Header */
 header {
    background-color: #527853;
@@ -38,14 +49,6 @@ header a {
     padding-bottom: 3px;
 }
 
-h1 {
-    font-family: 'Raleway', sans-serif;
-    color: #F9E8D9;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-weight: bold;
-    font-size: 30px;
-}
 
 #menu {
     font-size: 100%;
@@ -75,7 +78,7 @@ nav {
 
 /* Nav toggle */
 #nav-toggle:checked~nav {
-    display: block
+    display: block;
 }
 
 #nav-toggle {
@@ -89,16 +92,34 @@ nav {
 
 /* Main content*/
 main {
-    /* Make main ellement take up any surplus space to push footer down */
+    /* Make main element take up any surplus space to push footer down */
     flex: 1 0 auto;
     margin-top: 43px;
 }
 
-/* Hero image */
+
+/* Hero section */
 #hero {
     height: 600px;
     width: 100%;
     background: url("../assets/images/sea.jpg") no-repeat center center/cover;
+    position: relative;
+}
+
+
+#cover-text {
+    background-color: rgba(247, 183, 135, .7);
+    font-size: 130%;
+    position: absolute;
+    bottom: 30px;
+    width: 80%;
+    min-height: 200px;
+    padding-top: 40px;
+    padding-left: 10px;
+}
+
+#cover-text > h2, #cover-text > h3 {
+    color: #ffffff;
 }
 
 
@@ -120,7 +141,7 @@ main {
 
 /* Media query: tablets and larger (768px and up) */
 @media screen and (min-width: 768px) {
-    /* Header displayed */
+    /* Header */
     nav {
         display: block;
         position: relative;
@@ -148,12 +169,15 @@ main {
 
     /* Main Content */
     main {
-        /* Push main content down to accodate larger header */
+        /* Push main content down to accommodate larger header */
         margin-top: 79px;
     }
+    /* Hero */
+    #cover-text {
+        width: 300px;
+        right: 50px;
+    }
 }
-
-
 
 
 /* Larger devices (laptops and desktops, 992px and up) */
